@@ -1,7 +1,32 @@
 /* A debug class, used to separate components graphically during development */
+
 .debug {
-    border-style:solid;
+    border-style: solid;
 }
+
 td.alignRight {
     text-align: right;
-  }
+}
+
+.flexParent {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+ 
+   
+    /* … TODO … */
+}
+
+.sidebar {
+    flex:0.1;
+    border:1px solid;  
+    
+    /*… TODO … */
+}
+
+.mainContent {
+    flex:0.8;
+    margin: 2px; 
+    border:1px solid; 
+    /*… TODO … */
+}
