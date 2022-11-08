@@ -3,19 +3,23 @@
 .debug {
     border-style: solid;
 }
+@media (min-width:250px){ 
+    .flexParent {
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+     
+       
+        /* … TODO … */
+    }
+}
+
 
 td.alignRight {
     text-align: right;
 }
 
-.flexParent {
-    display: flex;
-    flex-direction: row;
-    height: 100%;
- 
-   
-    /* … TODO … */
-}
+
 
 .sidebar {
     flex:0.1;
