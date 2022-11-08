@@ -9,10 +9,10 @@ function Sidebar(props){
     function removeDishACB(dish){ 
         props.model.removeFromMenu(dish);
     }
-    function UpdateDishACB(id){ 
+    function updateDishACB(id){ 
         props.model.setCurrentDish(id)
     }
     
     return <SidebarView onNumberChange={passChangedNumberModelACB}  number={props.model.numberOfGuests} dishes={props.model.dishes} dishRemove = {removeDishACB}
-    dishUpdate = {UpdateDishACB} />;
+    dishUpdate = {updateDishACB} />;
 }
