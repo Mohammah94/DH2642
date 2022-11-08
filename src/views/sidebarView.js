@@ -22,10 +22,10 @@ function SidebarView(props) {
 
 function renderDishes(dishArray, number,props) {
     function dishesTableRowCB(dish) {
-        function RemoveDishACB(){
+        function removeDishACB(){
             props.dishRemove(dish);
         }
-        function UpdateDishACB(){
+        function updateDishACB(){
             props.dishUpdate(dish);
         }
 
@@ -36,10 +36,10 @@ function renderDishes(dishArray, number,props) {
         return (
             <tr key={dish.id}>
                 <td>
-                    <button onClick={RemoveDishACB}>X</button>
+                    <button onClick={removeDishACB}>X</button>
                 </td>
                 <td>
-                    <a onClick = {UpdateDishACB} href="#" >{dish.title}</a>
+                    <a onClick = {updateDishACB} href="#" >{dish.title}</a>
                 </td>
 
                 <td>
