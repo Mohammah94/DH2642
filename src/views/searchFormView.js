@@ -4,13 +4,10 @@ function SearchFormView(props) {
 
     }
 
-    function eventACB(event){
-        console.log(event.target.value)
-    }
-
+    
     return (
         <div>
-            <input onInput={eventACB}></input>
+            <input onInput={eventACB} placeholder="Search" type="search" ></input>
             
 
             <select onInput={eventACB}>
@@ -22,6 +19,10 @@ function SearchFormView(props) {
             
         </div>
     );
+    function eventACB(event){
+        console.log(event.target.value)
+    }
+
 
 }
 
