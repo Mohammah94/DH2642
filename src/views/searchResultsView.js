@@ -2,11 +2,12 @@ function SearchResultsView(props) {
     function resultACB(result) {
 
         function searchClickACB() {
-            console.log(result.target.value);
+            console.log(result);
+
         }
         return (
-            <span class="searchResult" onClick={searchClickACB}>
-                <img
+            <span class="searchResult" onClick={searchClickACB} >
+                <img  
                     src={"https://spoonacular.com/recipeImages/" + result.image}
                     height="100"
                 ></img>

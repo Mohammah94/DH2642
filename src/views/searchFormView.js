@@ -3,27 +3,31 @@ function SearchFormView(props) {
         return <option>{Opt}</option>
 
     }
+function printerSearchTextACB(somEvent){
+    console.log(somEvent.target.value); 
 
-    
+}
+    function printerSearchTypeACB(somEvent){
+        console.log(somEvent.target.value); 
+    }
+    function printerSearchOnClick(){
+        console.log(somEvent.target.value); 
+    }
     return (
         <div>
-            <input onInput={eventACB} placeholder="Search" type="search" ></input>
+            <input placeholder="Search" type="search" onChange= {printerSearchTextACB}></input>
             
 
-            <select onInput={eventACB}>
+            <select onChange={printerSearchTypeACB}>
                 <option>Choose:</option>
                 {props.dishTypeOptions.map(optionCB)}
 
             </select>
-            <button onClick={eventACB}>Search!</button>
+            <button onClick={printerSearchOnClick}>Search!</button>
             
         </div>
     );
-    function eventACB(event){
-        console.log(event.target.value)
-    }
-
-
+    
 }
 
 export default SearchFormView;
