@@ -3,7 +3,7 @@ function SearchResultsView(props) {
 
         function searchClickACB() {
             console.log(result);
-
+            props.onResultClick(result);
         }
         return (
             <span class="searchResult" onClick={searchClickACB} >

@@ -5,13 +5,16 @@ function SearchFormView(props) {
     }
 function printerSearchTextACB(somEvent){
     console.log(somEvent.target.value); 
-
+    props.searchText(somEvent.target.value);
 }
     function printerSearchTypeACB(somEvent){
-        console.log(somEvent.target.value); 
+        console.log(somEvent.target.value);
+        props.searchType(somEvent.target.value); 
     }
     function printerSearchOnClick(){
-        console.log(somEvent.target.value); 
+        //console.log(somEvent.target.value);
+        props.searchFromMenu();
+
     }
     return (
         <div>
