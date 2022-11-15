@@ -3,7 +3,7 @@ if(promiseToResolve !== null){
     promiseState.promise = promiseToResolve;
     promiseState.data = null;
     promiseState.error = null;
-    if(notify){notify()}
+    if(notifyABC){notifyABC()}
 
     function saveDataACB(res){
         if (promiseState.promise !== promiseToResolve){ return;}

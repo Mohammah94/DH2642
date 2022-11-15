@@ -12,6 +12,13 @@ const Search = require("../"+PREFIX+"/searchPresenter.js").default;
 
 export default
 function App(props){
+    /*we have mistake here because we forget to add this two lines
+    const Details = require("../"+PREFIX+"/detailsPresenter.js").default;
+const Search = require("../"+PREFIX+"/searchPresenter.js").default;
+
+                    <div><Search model={props.model} /></div>
+                <div><Details model={props.model} /></div>
+    */ 
     return (<div class="flexParent">
                 {<div class="sidebar"><Sidebar model={props.model} /></div>}
                 <div class="mainContent"><Summary model={props.model} /></div>
