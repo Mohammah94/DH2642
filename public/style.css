@@ -12,34 +12,30 @@
 .debug {
     border-style: solid;
 }
-@media (min-width:250px){ 
+.flexParent {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+  }
+  .sidebar {
+    flex: 0.2;
+    border: 1px;
+    width: 500px;
+  }
+  .mainContent {
+    flex: 0.8;
+    margin: 2px;
+    border: 1px;
+    width: 500px;
+  }
+  
+  @media (max-width: 500px) {
     .flexParent {
-        display: flex;
-        flex-direction: row;
-        height: 100%;
-     
-       
-        /* … TODO … */
+      flex-direction: column;
     }
-}
+  }
 
 
 td.alignRight {
     text-align: right;
-}
-
-
-
-.sidebar {
-    flex:0.1;
-    border:1px solid;  
-    
-    /*… TODO … */
-}
-
-.mainContent {
-    flex:0.8;
-    margin: 2px; 
-    border:1px solid; 
-    /*… TODO … */
 }
