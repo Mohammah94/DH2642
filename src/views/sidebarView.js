@@ -39,7 +39,7 @@ function renderDishes(dishArray, number,props) {
                     <button onClick={removeDishACB}>X</button>
                 </td>
                 <td>
-                    <a onClick = {updateDishACB} href="#" >{dish.title}</a>
+                    <a onClick = {updateDishACB} href="#details" >{dish.title}</a>
                 </td>
 
                 <td>

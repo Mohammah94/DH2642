@@ -4,6 +4,7 @@ function SearchResultsView(props) {
         function searchClickACB() {
             console.log(result);
             props.onResultClick(result);
+            window.location.hash = "#details";
         }
         return (
             <span class="searchResult" onClick={searchClickACB} >

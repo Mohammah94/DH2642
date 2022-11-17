@@ -22,8 +22,9 @@ const Search = require("../"+PREFIX+"/searchPresenter.js").default;
     return (<div class="flexParent">
                 {<div class="sidebar"><Sidebar model={props.model} /></div>}
                 <div class="mainContent"><Summary model={props.model} /></div>
-                <div><Search model={props.model} /></div>
-                <div><Details model={props.model} /></div>
+                <Show hash="#search"><Search model={props.model} /></Show>
+                <Show hash="#details"><Details model={props.model} /></Show>
+                
             </div>
            );
 }
