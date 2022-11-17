@@ -21,6 +21,7 @@ const Search = {   // ordinary JS object literal, can have methods like render()
     }
     function textSearchMenuACB(query) {
       component.query=query;
+      
     }
   
     function typeSearchMenuACB(type) {
