@@ -21,7 +21,7 @@ function DetailsView(props) {
             <div style="float:right">
                 <button class="button" disabled={props.isDishInMenu} onClick={function addDishACB() {
                     props.addDish();
-                    window.location.hash = "#search";
+                    //window.location.hash = "#search";
                 }}>Add to menu!</button>
                 <button class="button" onClick={function cancelACB() { window.location.hash = "#search"; }}> Cancel!</button>
             </div>

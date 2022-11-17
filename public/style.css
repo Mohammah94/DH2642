@@ -39,3 +39,25 @@
 td.alignRight {
     text-align: right;
 }
+<<<<<<< HEAD
+
+
+
+.sidebar {
+    flex:0.1;
+    border:1px solid;
+    width:100%; 
+    
+    /*… TODO … */
+}
+
+.mainContent {
+
+    flex:0.8;
+    margin: 2px; 
+    border:1px solid;
+    width:100%;
+    /*… TODO … */
+}
+=======
+>>>>>>> origin
