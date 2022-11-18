@@ -1,13 +1,13 @@
 /* Functional JSX component. Name starts with capital letter */
 import { sortIngredients } from "../utilities.js";
 function SummaryView(props) {
-    function serachHachACB(){
-        window.location.hash="#search"
+    function serachHachACB() {
+        window.location.hash = "#search"
     }
     return (
         <div class="debug">
             Summary for <span title="nr guests">{props.people}</span> persons:
-<button onClick={serachHachACB}> </button>
+            <button style="float:right" onClick={serachHachACB}> search</button>
             {  //  <---- we are in JSX; with this curly brace, we go back to JavaScript, and can write JS code and comments.
                 // Then we can come back to JSX <tags>
 
